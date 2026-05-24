@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0a0708;
+  background-image: radial-gradient(circle at 15% 30%, rgba(40, 18, 22, 0.6) 2%, transparent 2.5%),
+                    radial-gradient(circle at 75% 70%, rgba(80, 25, 35, 0.3) 1.5%, transparent 2%);
+  background-size: 48px 48px, 60px 60px;
+  font-family: 'Cormorant Garamond', 'Times New Roman', Georgia, serif;
+  padding: 2rem 1.5rem;
+  color: #ece3e0;
+}
+
+/* contenedor principal */
+.policy-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  background: rgba(10, 7, 8, 0.75);
+  backdrop-filter: blur(2px);
+  border: 1px solid #6a1e2f;
+  border-radius: 32px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(200, 70, 90, 0.2);
+  padding: 2rem 2rem 2.5rem;
+  transition: all 0.2s ease;
+}
+
+/* encabezado */
+.header-vamp {
+  text-align: center;
+  border-bottom: 2px solid #831e34;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1rem;
+  position: relative;
+}
+
+.header-vamp h1 {
+  font-size: 2.8rem;
+  letter-spacing: 3px;
+  font-weight: 500;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #f0e6dc, #bc7a5c, #962b44);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 6px rgba(150, 30, 50, 0.4);
+  font-family: 'Cinema', 'Cinematografica', 'Cormorant Garamond', serif;
+}
+
+.header-vamp .sub {
+  font-size: 0.9rem;
+  letter-spacing: 4px;
+  word-spacing: 6px;
+  color: #b85c6f;
+  font-family: monospace;
+  margin-top: 6px;
+  border-top: 1px dashed #4c1e2a;
+  display: inline-block;
+  padding-top: 8px;
+}
+
+/* grid de politicas */
+.policy-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* bloques */
+.policy-card {
+  background: #130b0e;
+  border-left: 6px solid #951f3b;
+  border-radius: 20px;
+  padding: 1.4rem 2rem;
+  transition: 0.2s linear;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+}
+
+.policy-card:hover {
+  border-left-width: 8px;
+  border-left-color: #bc3f5c;
+  background: #1c1216;
+  transform: translateX(6px);
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  font-family: 'Cinema', 'Cormorant Garamond', serif;
+  letter-spacing: -0.3px;
+  color: #e6b7a2;
+  border-bottom: 1px solid #4f202e;
+  padding-bottom: 0.5rem;
+}
+
+.title-icon {
+  font-family: monospace;
+  font-size: 1.6rem;
+  font-weight: normal;
+  opacity: 0.85;
+  letter-spacing: 0;
+}
+
+.card-text {
+  line-height: 1.55;
+  font-size: 1.07rem;
+  color: #f0e2db;
+  margin-bottom: 0.75rem;
+  text-align: justify;
+}
+
+.highlight {
+  color: #e6897a;
+  font-weight: 500;
+  font-family: monospace;
+  background: rgba(150, 30, 60, 0.25);
+  padding: 0 4px;
+  border-radius: 8px;
+}
+
+.small-note {
+  font-size: 0.85rem;
+  margin-top: 10px;
+  color: #b98c7c;
+  font-style: italic;
+  border-left: 2px solid #8c2c44;
+  padding-left: 12px;
+}
+
+.badge-vamp {
+  display: inline-block;
+  background: #2c0f16;
+  border-radius: 30px;
+  font-size: 0.7rem;
+  padding: 4px 12px;
+  font-family: monospace;
+  color: #d9917a;
+  letter-spacing: 1px;
+  margin-right: 12px;
+}
+
+/* informacion adicional contacto */
+.contact-footer {
+  margin-top: 3rem;
+  background: #0e080b;
+  border-radius: 28px;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  border: 1px solid #6f273f;
+  font-family: monospace;
+  font-size: 1rem;
+}
+
+.contact-footer a {
+  color: #df8f7a;
+  text-decoration: none;
+  border-bottom: 1px dashed #b1425e;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.contact-footer a:hover {
+  color: #f2bc9b;
+  border-bottom: 1px solid #e06c6c;
+}
+
+/* reglas extras tipograficas */
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #861f39, #5f1a2c, transparent);
+  margin: 1rem 0;
+}
+
+.legal-remark {
+  text-align: center;
+  font-size: 0.7rem;
+  margin-top: 2rem;
+  color: #4f3b38;
+  letter-spacing: 0.5px;
+}
+
+/* responsive */
+@media (max-width: 700px) {
+  body {
+    padding: 1rem;
+  }
+  .policy-container {
+    padding: 1.2rem;
+  }
+  .card-title {
+    font-size: 1.3rem;
+  }
+  .card-text {
+    font-size: 0.95rem;
+  }
+  .header-vamp h1 {
+    font-size: 2rem;
+  }
+}
